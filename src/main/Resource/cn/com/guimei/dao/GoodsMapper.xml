@@ -1,0 +1,9 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.guimei.dao.GoodsMapper">
+    <insert id="add" parameterType="cn.com.guimei.pojo.Goods">
+        insert into goods(goodsName, goodsSmalId, goodsMoney, goodsNumber, goodsImage, goodsCarriage, goodsType, goodsDiscId,goodsSellerId)
+        values(#{goodsName},#{goodsSmalId},#{goodsMoney},#{goodsNumber},#{goodsImage},#{goodsCarriage},#{goodsType},#{goodsDiscId},#{goodsSellerId});
+    </insert>
+</mapper>
